@@ -7,8 +7,8 @@ A Lorem Ipsum text generator with multiple themes, paragraph and word controls, 
 The project is inspired by [GeeksforGeeks](https://www.geeksforgeeks.org/javascript/create-your-own-lorem-ipsum-using-html-css-and-javascript/)
 ## Screenshot
 
-![Light Mode](./screenshots/light-generator)
-![Dark Mode](./screenshots/dark-generator)
+![Light Mode](./screenshots/light-generator.jpeg)
+![Dark Mode](./screenshots/dark-generator.jpeg)
 
 ### Links
 
