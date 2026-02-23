@@ -12,7 +12,7 @@ The project is inspired by [GeeksforGeeks](https://www.geeksforgeeks.org/javascr
 
 ### Links
 
-- Live Site URL: [https://yourusername.github.io/lorem-ipsum-generator/](https://yourusername.github.io/lorem-ipsum-generator/)
+- Live Site URL: [https://zackdora.github.io/lorem-ipslum-generator/](https://zackdora.github.io/lorem-ipslum-generator/)
 
 ### Built with
 
