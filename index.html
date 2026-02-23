@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Generato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lorem Ipsum Generator</h1>
+            <button class="theme-button" id="theme-toggle">Dark Mode</button>
+        </header>
+
+        <div class="controls-grid">
+            <div class="input-group">
+                <label for="paras">Paragraphs</label>
+                <input type="number" id="paras" value="3" min="1" max="50">
+            </div>
+            
+            <div class="input-group">
+                <label for="words">Words per Paragraph</label>
+                <input type="number" id="words" value="60" min="10" max="500">
+            </div>
+            
+            <div class="input-group">
+                <label for="format">Format</label>
+                <select id="format">
+                    <option value="plain">Plain Text</option>
+                    <option value="html">HTML (&lt;p&gt; tags)</option>
+                    <option value="list">Bullet List (&lt;li&gt;)</option>
+                </select>
+            </div>
+            
+            <div class="input-group">
+                <label for="theme">Theme</label>
+                <select id="word-theme">
+                    <option value="latin">Latin</option>
+                    <option value="space">Space</option>
+                    <option value="pirate">Pirate</option>
+                </select>
+            </div>
+        </div>
+        
+        
+        <div class="options-row">
+            <label for="start-lorem">
+                <input type="checkbox" id="start-lorem">
+                Start with "Lorem Ipsum"
+            </label>
+            
+        </div>
+    
+        <div class="button-row">
+            <button class="btn-primary" id="generate">Generate</button>
+            <button class="btn-secondary" id="copy">Copy</button>
+            <button class="btn-secondary" id="download">Download .txt</button>
+        </div>
+
+        <div class="notification" id="notification"></div>
+
+        <div class="output-box" id="output">
+            <p class="placeholder">Configure and generate...</p>
+        </div>
+        
+    </container>
+</body>
+<script src="script.js"></script>
+
+</html>

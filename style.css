@@ -1,0 +1,143 @@
+*  {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary: #6366f1;
+    --primary-hover: #4f46e5;
+    --bg: #f1f5f9;
+    --card: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border: #e2e8f0;
+}
+
+body.dark {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --border: #334155;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text-main);
+
+    transition: background 0.3s;
+}
+
+.container {
+    background: var(--card);
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    width: 90%;
+    max-width: 650px;
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+
+.controls-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));;
+    gap: 12px;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+label { 
+    font-size: 0.75rem; 
+    font-weight: 700; 
+    color: var(--text-muted); 
+    text-transform: uppercase; 
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--card);
+    color: var(--text-main);
+}
+
+.options-row { 
+    margin: 10px 0 20px; 
+    font-size: 0.9rem; 
+}
+
+.button-row { 
+    display: flex; 
+    gap: 8px; 
+    margin-bottom: 20px; 
+}
+
+button { 
+    flex: 1; 
+    padding: 12px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    border: none; 
+    font-weight: 600; 
+}
+
+.btn-primary { 
+    background: var(--primary); 
+    color: white; 
+}
+
+.btn-secondary { 
+    background: transparent; 
+    border: 1px solid var(--border); 
+    color: var(--text-main); 
+}
+
+#theme-toggle { 
+    flex: none; 
+    background: var(--primary-hover); 
+    color: white; 
+    font-size: 0.8rem; 
+}
+
+.output-box {
+    background: rgba(0,0,0,0.02);
+    border: 1px solid var(--border);
+    padding: 15px;
+    border-radius: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+ul {
+  margin-left: 1.5em;
+  padding-left: 0;
+}
+
+.notification {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: --var(--primary);
+}
